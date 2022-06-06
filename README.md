@@ -101,6 +101,18 @@ firs_3dimarr=np.arange(24).reshape(2,3,4)
 np.moveaxis(firs_3dimarr,0,-1)
 
 // interchange 2 axis
+np.swapaxes(a,axis1,axis2)
+
+// reverse an array
+arr_1dim[::-1]
+arr_1dim.reverse()
+np.flip(arr_1dim)
+
+arr_2dim = np.arange(9).reshape(3,3)
+np.flip(arr_2dim)
+np.flip(arr_2dim,1)
+
+
 
 np.flatten(arr) // create copy
 arr.flatten()
