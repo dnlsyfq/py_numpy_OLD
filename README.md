@@ -174,6 +174,9 @@ np.std(arr)
 np.unique(arr)
 np.unique(arr,return_index=True) // return unique elements and its index
 np.unique(arr,return_counts=True)
+
+* np.random.randint(low=int,high=int,size=int)
+return list of integer from low to high based on size / length 
 ```
 ```
 ```
@@ -218,3 +221,6 @@ np.percentile(arr,nth)
 
 the standard deviation tells us the spread of the data. The larger the standard deviation, the more spread out our data is from the center. The smaller the standard deviation, the more the data is clustered around the mean.
 
+```
+plt.hist(arr,bins=int,range=(int,int))
+```
