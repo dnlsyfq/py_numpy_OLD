@@ -279,3 +279,48 @@ In fact, here are a few more helpful rules for normal distributions:
 95% of our samples will fall between +/- 2 standard deviations of the mean
 99.7% of our samples will fall between +/- 3 standard deviations of the mean            
 ```
+
+## Binomial distribution
+
+```
+The binomial distribution can help us. It tells us how likely it is for a certain number of “successes” to happen, given a probability of success and a number of trials.
+
+certain basketball player makes 30% of his free throws. On Friday night’s game, he had the chance to shoot 10 free throws. How many free throws might you expect him to make? We would expect 0.30 * 10 = 3.
+
+However, he actually made 4 free throws out of 10 or 40%.
+
+The probability of success was 30% (he makes 30% of free throws)
+The number of trials was 10 (he took 10 shots)
+The number of successes was 4 (he made 4 shots)
+
+np.random.binomial, which we can use to determine the probability of different outcomes.
+
+
+It takes the following arguments:
+
+N: The number of samples or trials
+P: The probability of success
+size: The number of experiments
+
+# Let's generate 10,000 "experiments"
+# N = 10 shots
+# P = 0.30 (30% he'll get a free throw)
+ 
+np.random.binomial(10, 0.30, size=10000)
+
+Our basketball player has a 30% chance of making any individual basket. He took 10 shots and made 4 of them, even though we only expected him to make 3. What percent chance did he have of making those 4 shots?
+
+We can calculate a different probability by counting the percent of experiments with the same outcome, using the np.mean function.
+
+calculate the probability that he makes 4 baskets:
+
+a = np.random.binomial(10, 0.30, size=10000)
+np.mean(a == 4)
+
+emails = np.random.binomial(500, 0.05, size=10000) // estimated probability that 25 people would open the email.
+
+
+no_emails = np.mean(emails == 0) // probability that no one opens the email
+b_test_emails = np.mean(emails >= 40) // probability that 8% or more of people will open the email , 8% of 500 emails is 40
+print(no_emails,b_test_emails)
+```
