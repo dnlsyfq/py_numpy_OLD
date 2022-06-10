@@ -244,3 +244,38 @@ The type of distribution affects the position of the mean and median. In heavily
 
 ```
 
+## Normal @ Uniform distribution
+
+```
+The mean sets the “middle” of the distribution, and the standard deviation sets the “width” of the distribution.
+
+A larger standard deviation leads to a wider distribution.
+
+A smaller standard deviation leads to a skinnier distribution.
+
+np.random.normal(mean,std,size)
+```
+
+```
+standard deviation affects the “shape” of our normal distribution
+
+Suppose that we have a normal distribution with a mean of 50 and a standard deviation of 10. 
+
+When we say “within one standard deviation of the mean”, this is what we are saying mathematically:
+
+
+lower_bound = mean - std
+            = 50 - 10
+            = 40
+ 
+upper_bound = mean + std
+            = 50 + 10
+            = 60
+            
+            
+In fact, here are a few more helpful rules for normal distributions:
+
+68% of our samples will fall between +/- 1 standard deviation of the mean
+95% of our samples will fall between +/- 2 standard deviations of the mean
+99.7% of our samples will fall between +/- 3 standard deviations of the mean            
+```
