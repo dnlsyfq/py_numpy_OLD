@@ -224,3 +224,23 @@ the standard deviation tells us the spread of the data. The larger the standard 
 ```
 plt.hist(arr,bins=int,range=(int,int))
 ```
+
+## Statistical Distributions with Numpy
+
+Peaks represent concentrations of data
+```
+Unimodal dataset - one distinct peak
+Bimodal dataset - two distinct peak , because 2 different populations
+Multimodal dataset - more than 2 peaks
+Uniform dataset - doestnt have any distinct peaks
+```
+
+```
+A skew-right dataset has a long tail on the right of the peak, but most of the data is on the left. - right tail . median < mean
+A skew-left dataset has a long tail on the left of the peak, but most of the data is on the right. - left tail . mean < median
+
+The type of distribution affects the position of the mean and median. In heavily skewed distributions, the mean becomes a less useful measurement.
+
+
+```
+
