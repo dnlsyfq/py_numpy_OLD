@@ -8,6 +8,8 @@
 4. Scale the data
 ```
 
+* rows, first dimension
+* columns, second dimension
 ### Dimensional Arrays
 ```
 Vector // 1D[1,2,3]
@@ -46,6 +48,7 @@ np.linspace(start,stop) // floating pts
 np.linspace(1,10)
 np.linspace((1,10),(10,20))
 np.random.rand(int,dimension) // float random no
+np.random.random(int)
 np.random.randint(start,highest,quantity) // int random no
 np.zeros(int)
 np.zeros((int,int)) // 2D
