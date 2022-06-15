@@ -191,11 +191,11 @@ classroom_ids_and_sizes[:,0][classroom_ids_and_sizes[:,0] % 2 ==0]
 ```
 
 ### np.where
-* np.where // return index also replace value
+* np.where // return index of filter element also find and replace 
 ```
-np.where(classroom_ids_and_sizes[:,0]%2 == 0)
+np.where(classroom_ids_and_sizes[:,1] % 2 == 0) // return index
 row_ind, col_ind = np.where(sudoku_game == 0) //tuple of indices
-np.where(sudoku_game == 0,"",sudoku_game)
+np.where(sudoku_game == 0,"",sudoku_game) // find and replace
 ```
 
 
