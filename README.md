@@ -132,6 +132,9 @@ arr[start:stop:step]
 arr[::2]
 ```
 
+### Fancy Indexing
+
+
 ### Joining and splitting array
 
 * concatenate
@@ -182,6 +185,17 @@ np.unique(arr,return_counts=True)
 return list of integer from low to high based on size / length 
 ```
 ```
+classroom_ids_and_sizes = np.random.randint(0,100,size=8).reshape(4,2)
+classroom_ids_and_sizes
+classroom_ids_and_sizes[:,0][classroom_ids_and_sizes[:,0] % 2 ==0]
+```
+
+### np.where
+* np.where // return index also replace value
+```
+np.where(classroom_ids_and_sizes[:,0]%2 == 0)
+row_ind, col_ind = np.where(sudoku_game == 0) //tuple of indices
+np.where(sudoku_game == 0,"",sudoku_game)
 ```
 
 
@@ -205,7 +219,9 @@ np.mean(arr,axis=0|1)
 to identify outliers because if they go unnoticed, they can skew our data and lead to error in our analysis (like determining the mean).
 the median value can provide an important comparison to the mean. Unlike a mean, the median is not affected by outliers.
 ```
-np.sort(arr)
+* axis = 0 // rows
+* axis = 1 // columns
+np.sort(arr,axis=0|1)
 ```
 
 The Nth percentile is defined as the point N% of samples lie below it. So the point where 40% of samples are below is called the 40th percentile
