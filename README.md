@@ -349,3 +349,35 @@ no_emails = np.mean(emails == 0) // probability that no one opens the email
 b_test_emails = np.mean(emails >= 40) // probability that 8% or more of people will open the email , 8% of 500 emails is 40
 print(no_emails,b_test_emails)
 ```
+### Adding and removing data
+
+* np.concatenate((arr,arr),axis=1)
+* (3,3) + (3,) // wont work
+* (3,3) + (3,1)
+* arr.reshape((row,column))
+```
+classrooms_ids_and_sizes = np.array([
+    [1,22],[2,21],[3,27],[4,26]
+])
+
+new_classrooms = np.array([
+    [5,30],[5,17]
+])
+
+np.concatenate((classrooms_ids_and_sizes,new_classrooms))
+```
+
+```
+np.delete(arr,1,axis=0) // delete index 1 , row
+```
+
+```
+# Delete the stump diameter column from tree_census
+tree_census_no_stumps = np.delete(tree_census, 3, axis=1)
+
+# Save the indices of the trees on block 313879
+private_block_indices = np.where(tree_census[:,1] == 313879)
+
+# Delete the rows for trees on block 313879 from tree_census_no_stumps
+tree_census_clean = np.delete(tree_census_no_stumps,private_block_indices,axis=0)
+```
