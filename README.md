@@ -132,7 +132,13 @@ arr[start:stop:step]
 arr[::2]
 ```
 
-### Fancy Indexing
+```
+largest_tree_data = tree_census[tree_census[:,2] == 51]
+block_313879 = tree_census[tree_census[:,1] == 313879] // Fancy Indexing
+trunk_stump_diameters = np.where(tree_census[:,2] == 0,tree_census[:,3],tree_census[:,2]) 
+```
+
+
 
 
 ### Joining and splitting array
