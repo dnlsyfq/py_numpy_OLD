@@ -137,8 +137,25 @@ largest_tree_data = tree_census[tree_census[:,2] == 51]
 block_313879 = tree_census[tree_census[:,1] == 313879] // Fancy Indexing
 trunk_stump_diameters = np.where(tree_census[:,2] == 0,tree_census[:,3],tree_census[:,2]) 
 ```
+### Vectorize Python Code
+* np.vectorize(<python fn>)
+```
+array = np.array(["Numpy","is","awesome"])
+len(array) > 2
 
+# element wise
+vectorized_len = np.vectorize(len)
+vectorized_len(array) > 2
+```
 
+```
+# Vectorize the .upper() string method
+vectorized_upper = np.vectorize(str.upper)
+
+# Apply vectorized_upper to the names array
+uppercase_names = vectorized_upper(names)
+print(uppercase_names)
+```
 
 
 ### Joining and splitting array
@@ -179,7 +196,12 @@ np.divide(arr,arr)
 np.mod(arr,arr)
 np.power(arr,arr)
 np.sqrt(arr)
-arr.sum()
+np.linspace(start,end,size)
+arr.sum(axis=0|1,keepdims=True) // return 2D
+arr.min(axis=0|1)
+arr.max()
+arr.mean(axis=0|1)
+arr.cumsum(axis=0)
 np.min(arr)
 np.max(arr)
 np.std(arr)
@@ -381,3 +403,13 @@ private_block_indices = np.where(tree_census[:,1] == 313879)
 # Delete the rows for trees on block 313879 from tree_census_no_stumps
 tree_census_clean = np.delete(tree_census_no_stumps,private_block_indices,axis=0)
 ```
+
+### Matplotlib
+
+* Figure , contains all elements of the output graph
+* Axes , subsection of figure where our graph is plotted, contains
+    * Title
+    * x-label
+    * y-label
+* Axis , is the no. lines that show scale of plotted graph
+  
