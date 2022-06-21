@@ -413,3 +413,46 @@ tree_census_clean = np.delete(tree_census_no_stumps,private_block_indices,axis=0
     * y-label
 * Axis , is the no. lines that show scale of plotted graph
   
+### RGB Array
+
+```
+rgb = np.array([
+    [[255.0,0],[255,0,0],[255,0,0]],
+    [[0,255,0],[0,255,0],[0,255,0]],
+    [[0,0,255],[0,0,255],[0,0,255]]
+])
+
+plt.imshow(rgb)
+
+```
+
+### save numpy
+
+```
+.npy // file format
+
+
+with open('_.npy','rb') as f:
+  logo_rgb_array = np.load(f)
+  
+  
+  
+plt.imshow(logo_rgb_array)
+plt.show()
+```
+
+```
+with open('_.npy','wb') as f:
+  np.save(f,variable_name)
+```
+
+```
+arr[:,:,0]
+help(np.ndarray.astype)
+```
+
+### update element 
+
+```
+np.where(arr = 255, 50 , arr)
+```
