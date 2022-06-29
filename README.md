@@ -74,6 +74,8 @@ first_arr
 
 np_2d[ind][ind]
 np_2d[ind,ind]
+np_2d[:,ind:ind]
+np_2d[1,:]
 
 np.insert(first_arr,3,4) // index 3 , value 4
 
