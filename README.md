@@ -247,6 +247,12 @@ ring_toss = np.array([[1, 0, 0],
 * 1 , rows
 ```
 np.mean(arr,axis=0|1)
+np.median(arr)
+np.std(arr)
+np.corrcoef(arr,arr)
+np.random.normal(mean,std,no. of samples)
+
+np.column_stack((arr,arr))
 ```
 
 to identify outliers because if they go unnoticed, they can skew our data and lead to error in our analysis (like determining the mean).
