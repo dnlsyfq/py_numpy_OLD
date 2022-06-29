@@ -72,6 +72,9 @@ np.full((2,2,2),8)
 first_arr = np.array([1,2,3,5])
 first_arr
 
+np_2d[ind][ind]
+np_2d[ind,ind]
+
 np.insert(first_arr,3,4) // index 3 , value 4
 
 second_arr = np.array([1,2,3,4])
