@@ -40,6 +40,20 @@ arr.size or np.size(arr) // total no. of element
 arr.shape or np.shape(arr) // number of elements in each dimension
 ```
 
+### Logical
+
+```
+bmi > 21 and bmi < 22
+
+logical_and()
+logical_or()
+logical_not()
+
+np.logical_and(bmi > 21, bmi < 22)
+bmi[np.logical_and(bmi > 21, bmi <22)]
+
+```
+
 ### Array
 
 ```
