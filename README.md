@@ -29,7 +29,12 @@ multi_arr = np.array([
 
 multi_arr[1,0,2] // return 9
 ```
+### Numpy loops
 
+```
+for val in np.nditer(np.array([np_height,np_weight]):
+    print(val)
+```
 ### Numpy Commands
 ```
 arr.dtype // check nd array data type
