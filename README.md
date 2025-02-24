@@ -1,3 +1,21 @@
+### Scientific Notation
+```
+print(16e3)
+# Prints 16000.0
+
+print(7.1e-2)
+# Prints 0.071
+
+
+num = 16_000
+print(num)
+# Prints 16000
+
+num = 16_000_000
+print(num)
+# Prints 16000000
+```
+
 
 ### Machine Learning Step
 
