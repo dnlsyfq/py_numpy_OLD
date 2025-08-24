@@ -504,3 +504,10 @@ help(np.ndarray.astype)
 ```
 np.where(arr = 255, 50 , arr)
 ```
+---
+
+# list to np array
+
+```
+np.array(list)
+```
