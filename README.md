@@ -1,3 +1,20 @@
+### Numpy ndarray
+
+```
+* Multidimensional array
+* Faster and efficient
+```
+
+```
+int_arr = np.array(list_var)
+
+
+
+```
+
+
+
+
 ### Scientific Notation
 ```
 print(16e3)
