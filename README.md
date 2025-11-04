@@ -6,12 +6,35 @@
 ```
 
 ```
+//1D
 int_arr = np.array(list_var)
 
+//2D
+matrix = np.array([
+    [-1,0,1],
+    [-3,4,3]
+]
 
+//3D
+
+array3d = np.array([
+    [
+        [1,2,1],
+        [-4,-3,0]        
+    ],
+    [
+        [-1,0,1],
+        [-5,6,5]
+    ]
+])
 
 ```
 
+// numpy dtype
+```
+np.array(var_list, dtype=np.short|np.ushort)
+
+```
 
 
 
