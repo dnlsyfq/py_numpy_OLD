@@ -60,6 +60,17 @@ diagonal_entries = np.diag(diagonal_2d) // extract diagonal
 
 ```
 
+```
+np.zeroes()
+
+np.ones()
+
+np.full(shape,fill_value,dtype)
+
+
+```
+
+
 
 ### Scientific Notation
 ```
