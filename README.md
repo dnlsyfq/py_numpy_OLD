@@ -32,10 +32,33 @@ array3d = np.array([
 
 // numpy dtype
 ```
-np.array(var_list, dtype=np.short|np.ushort)
+np.array(var_list, dtype=np.short|np.ushort|np.single)
 
 ```
 
+// generate array
+
+```
+np.arange(start,stop,seq)
+np.linspace(start,stop,num of elements)
+
+// Identity matrix , same m same n , diagonal value of 1 
+np.eye(m,n) // m x n 
+
+// Create 2D with given value for diagonal
+np.diag(array_for_diag)
+
+// Extract diagonal 
+diagonal_2d = np.array([
+    [1,0,0,0],
+    [0,2,0,0],
+    [0,0,3,0],
+    [0,0,0,4]
+])
+
+diagonal_entries = np.diag(diagonal_2d) // extract diagonal
+
+```
 
 
 ### Scientific Notation
