@@ -19,3 +19,7 @@ print(np.zeros((4,3,2),dtype=np.uint))
 print(np.zeros((4,3,2),dtype=np.uint).ndim)
 
 print(np.ones((2,3)))
+
+print(np.full((5,3),np.pi))
+
+print(np.random.rand(2,2))

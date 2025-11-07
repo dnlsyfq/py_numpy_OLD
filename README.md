@@ -67,7 +67,34 @@ np.ones()
 
 np.full(shape,fill_value,dtype)
 
+np.random.rand(shape)
+```
 
+### Indexing
+
+```
+// 2d indexing
+
+matrix_var[n, m] // extract 1 cell
+
+matrix_Var[n] // extract entire row array
+
+```
+
+### Slicing
+
+```
+[start : stop : step]
+
+// 2D
+[row-start:row:stop, col-start:col-stop]
+
+// MultiD
+[
+    dimN-start:dimN-stop,
+    dimN-start:dimN-stop,
+    dimN-start:dimN-stop,
+]
 ```
 
 
