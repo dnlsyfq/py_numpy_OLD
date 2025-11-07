@@ -97,6 +97,18 @@ matrix_Var[n] // extract entire row array
 ]
 ```
 
+### Advanced Indexing
+
+
+
+```
+[row,col]
+[[row,row]]
+[[row,row],col]
+[[row,row],[col,col]]
+
+
+```
 
 
 ### Scientific Notation
