@@ -110,6 +110,79 @@ matrix_Var[n] // extract entire row array
 
 ```
 
+### Boolean Indexing
+
+```
+a_1d = np.array([-1,0,1])
+
+bool_idx = np.array([True,False,True])
+
+print(a_1d[bool_idx])
+
+print(a_1d[a_1d >= 1])
+```
+
+### Reshaping
+
+```
+
+# 1d array of size , 6
+a_1d = np.array([1,2,3,4,5,6])
+
+# convert to 2d
+a_2d = a_1d.reshape(2,3)
+
+# convert to 3d
+print(a_1d.reshape(2,1,3))
+
+print(a_1d.reshape(2,1,-1))
+
+# convert ?x to 1d , flattening
+
+print(a_2d.reshape(-1))
+
+
+```
+
+### Broadcasting
+* perform operations on arrays with different shapes
+* broadcasting compatibility check :
+- matching dimensions are equal in size
+- one of the dimensions is one
+```
+a_2x3 = np.array([
+    [-1,0,1],
+    [-2,-1,2]
+])
+
+a_1x3 = np.array([3,4,5])
+
+sum = a_2x3 + a_1x3
+
+
+
+```
+
+### Nditer iterator
+nditer iterator object to iterate over all elements in multi dimensional array 
+
+```
+for element in np.nditer(array):
+    print(element)
+
+// column wise
+for element in np.nditer(array,order="F"):
+    print(element)
+
+// change while iterate
+for element in np.nditer(array,op_flags=['readwrite']):
+
+// iterate 2 arrays 
+for a1,a2 in np.nditer([arr1,arr2]):
+    
+
+```
+
 
 ### Scientific Notation
 ```
