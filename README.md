@@ -1,6 +1,11 @@
 ### Numpy ndarray
 
 ```
+print('a' * 0) # No output for this line
+print('a' * -1) # No output for this line
+```
+
+```
 * Multidimensional array
 * Faster and efficient
 ```
