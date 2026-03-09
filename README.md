@@ -1,5 +1,14 @@
 ### Numpy ndarray
 
+
+```
+# select all columns for a given set of rows
+ndarray[row_index] 
+
+# select particular columns for a given set of rows
+ndarray[row_index, column_index]
+```
+
 ```
 print('a' * 0) # No output for this line
 print('a' * -1) # No output for this line
