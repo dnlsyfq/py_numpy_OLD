@@ -1,5 +1,22 @@
 ### Numpy ndarray
 
+ we want to find the maximum value of each row? We can use the axis parameter and set it to 1 to find the maximum value for each row
+ ```
+np_arr.max(axis=1)
+
+```
+Similarly, we set axis to 0 to find the maximum value of each column:
+```
+np_arr.max(axis=0)
+```
+
+read csv 
+```
+import numpy as np
+
+np.genfromtxt(filename, delimiter=None)
+```
+
 
 ```
 # select all columns for a given set of rows
@@ -73,6 +90,16 @@ diagonal_2d = np.array([
 diagonal_entries = np.diag(diagonal_2d) // extract diagonal
 
 ```
+
+```
+np_arr.min()
+np_arr.max()
+np_arr.mean()
+np_arr.sum()
+
+
+```
+
 
 ```
 np.zeroes()
