@@ -114,6 +114,10 @@ np.random.rand(shape)
 ### Indexing
 
 ```
+array[row_index, col_index] = new_value
+```
+
+```
 // 2d indexing
 
 matrix_var[n, m] // extract 1 cell
