@@ -14,7 +14,7 @@ read csv
 ```
 import numpy as np
 
-np.genfromtxt(filename, delimiter=None)
+np.genfromtxt(filename, delimiter=None, skip_header=1) // To skip the first row, use a value of 1, not 0.
 ```
 
 
